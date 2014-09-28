@@ -1,0 +1,5 @@
+# Vagrant folders
+.vagrant
+
+# OS generated files and folders
+.DS_Store
