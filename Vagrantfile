@@ -34,8 +34,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision "docker", version: "1.2" do |docker|
-    docker.run "tutum/mongodb", args: "-p 27017:27017 -p 28017:28017 -e MONGODB_PASS=\"admin\""
-    docker.run "tutum/rabbitmq", args: "-p 5672:5672 -p 15672:15672 -e RABBITMQ_PASS=\"admin\""
   end
 
   config.vm.provision "shell", path: "provision.sh", privileged: false
