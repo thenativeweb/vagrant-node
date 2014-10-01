@@ -54,6 +54,14 @@ Additionally, the following CLI tools have been installed globally and are ready
 - [Mocha](http://visionmedia.github.io/mocha/)
 - [UglifyJS2](http://lisperator.net/uglifyjs/)
 
+### Using Docker
+
+Besides Node.js, Docker has been installed as well. You can use it using the usual Docker commands such as `docker run` or `docker ps`.
+
+If you add custom Docker containers, you may need to adjust the port forwarding settings in the `Vagrantfile` file and recreate the virtual machine from scratch. Please note that forwarding UDP ports requires some special actions. For details see the Vagrant documentation on [forwarding ports](https://docs.vagrantup.com/v2/networking/forwarded_ports.html).
+
+
+
 ## License
 
 The MIT License (MIT)
