@@ -28,7 +28,7 @@ If you want to ssh into the virtual machine run the following command. Please no
 
 Apart from that, any other Vagrant command will work as well, such as `vagrant status`, `vagrant halt` or `vagrant destroy`.
 
-### Trying GitHub access
+### Verifying GitHub access
 
 To verify that SSH agent forwarding was setup successfully, ssh into the virtual machine and run the following command.
 
