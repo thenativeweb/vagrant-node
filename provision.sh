@@ -24,5 +24,5 @@ echo "cd ~/projects" >> ~/.profile
 
 ssh-keyscan github.com >> ~/.ssh/known_hosts
 
-echo
+echo ""
 echo "Everything done, have a nice day :-)!"
