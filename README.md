@@ -54,13 +54,21 @@ Additionally, the following CLI tools have been installed globally and are ready
 - [Mocha](http://visionmedia.github.io/mocha/)
 - [UglifyJS2](http://lisperator.net/uglifyjs/)
 
+Where necessary, port forwardings for these tools have already been configured.
+
 ### Using Docker
 
 Besides Node.js, Docker has been installed as well. You can use it using the usual Docker commands such as `docker run` or `docker ps`.
 
 If you add custom Docker containers, you may need to adjust the port forwarding settings in the `Vagrantfile` file and recreate the virtual machine from scratch. Please note that forwarding UDP ports requires some special actions. For details see the Vagrant documentation on [forwarding ports](https://docs.vagrantup.com/v2/networking/forwarded_ports.html).
 
+MongoDB and RabbitMQ are installed and run by default as Docker containers. Their ports are `27017` and `27018` respectively `5672` and `15672`. Port forwardings for these ports has also already been configured.
 
+For both services, the username as well as the password have been set to `admin`.
+
+Additionally, the virtual machine has the MongoDB client tools installed, so you can access MongoDB using the `mongo` command.
+
+    $ mongo admin -u admin -p admin
 
 ## License
 
