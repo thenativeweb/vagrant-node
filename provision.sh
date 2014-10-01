@@ -13,6 +13,11 @@ source ~/.profile
 nvm install 0.10
 nvm alias default 0.10
 
+npm install -g browserify
 npm install -g grunt-cli
+npm install -g http-server
+npm install -g uglify-js
 
-echo "cd /thenativeweb" >> ~/.profile
+echo "cd ~/thenativeweb" >> ~/.profile
+
+ssh-keyscan github.com >> /root/.ssh/known_hosts
