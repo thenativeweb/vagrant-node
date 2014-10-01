@@ -4,7 +4,7 @@ sudo echo "Europe/Berlin" | sudo tee /etc/timezone
 sudo dpkg-reconfigure -f noninteractive tzdata
 
 sudo apt-get update -y
-sudo apt-get install -y build-essential curl git libssl-dev man
+sudo apt-get install -y build-essential curl git libssl-dev man mongodb-clients
 
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 echo "source ~/.nvm/nvm.sh" >> ~/.profile
@@ -20,6 +20,9 @@ npm install -g http-server
 npm install -g mocha
 npm install -g uglify-js
 
-echo "cd ~/thenativeweb" >> ~/.profile
+echo "cd ~/projects" >> ~/.profile
 
-ssh-keyscan github.com >> /root/.ssh/known_hosts
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+echo
+echo "Everything done, have a nice day :-)!"

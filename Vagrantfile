@@ -7,12 +7,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_check_update = true
 
   config.vm.network "forwarded_port", guest: 3000, host: 3000
+
+  # MongoDB ports
+  config.vm.network "forwarded_port", guest: 27017, host: 27017
+  config.vm.network "forwarded_port", guest: 28017, host: 28017
+
+  # RabbitMQ ports
   config.vm.network "forwarded_port", guest: 5672, host: 5672
   config.vm.network "forwarded_port", guest: 15672, host: 15672
 
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder "../", "/home/vagrant/thenativeweb"
+  config.vm.synced_folder "../", "/home/vagrant/projects"
 
   config.vm.provider "virtualbox" do |vm|
     vm.memory = 2048
@@ -25,6 +31,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision "docker", version: "1.2" do |docker|
+    docker.run "tutum/mongodb", args: "-p 27017:27017 -p 28017:28017 -e MONGODB_PASS=\"admin\""
     docker.run "tutum/rabbitmq", args: "-p 5672:5672 -p 15672:15672 -e RABBITMQ_PASS=\"admin\""
   end
 
