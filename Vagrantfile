@@ -36,6 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision "docker", version: "1.2" do |docker|
+    docker.pull_images "ubuntu"
   end
 
   config.vm.provision "shell", path: "provision.sh", privileged: false
