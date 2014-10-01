@@ -40,6 +40,20 @@ If the output is
 
 everything is fine. If not, please consider the documentation for SSH.
 
+### Using Node.js
+
+Inside of the virtual machine, Node.js has already been installed for you. Installation of Node.js is done using [nvm](https://github.com/creationix/nvm), so you can easily switch versions if necessary.
+
+Additionally, the following CLI tools have been installed globally and are ready to use:
+
+- [Browserify](http://browserify.org/)
+- [ESLint](http://eslint.org/)
+- [Grunt](http://gruntjs.com/)
+- [Harp](http://harpjs.com/)
+- [http-server](https://github.com/nodeapps/http-server)
+- [Mocha](http://visionmedia.github.io/mocha/)
+- [UglifyJS2](http://lisperator.net/uglifyjs/)
+
 ## License
 
 The MIT License (MIT)

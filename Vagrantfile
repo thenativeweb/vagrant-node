@@ -6,7 +6,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "chef/ubuntu-14.04"
   config.vm.box_check_update = true
 
+  # Ports for Express, http-server and Harp
   config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
+  config.vm.network "forwarded_port", guest: 9000, host: 9000
 
   # MongoDB ports
   config.vm.network "forwarded_port", guest: 27017, host: 27017
