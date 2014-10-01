@@ -51,6 +51,7 @@ Additionally, the following CLI tools have been installed globally and are ready
 - [Grunt](http://gruntjs.com/)
 - [Harp](http://harpjs.com/)
 - [http-server](https://github.com/nodeapps/http-server)
+- [Less](http://lesscss.org/)
 - [Mocha](http://visionmedia.github.io/mocha/)
 - [UglifyJS2](http://lisperator.net/uglifyjs/)
 

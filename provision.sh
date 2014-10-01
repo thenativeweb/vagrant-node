@@ -18,6 +18,7 @@ npm install -g eslint
 npm install -g grunt-cli
 npm install -g harp
 npm install -g http-server
+npm install -g less
 npm install -g mocha
 npm install -g uglify-js
 
