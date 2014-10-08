@@ -20,6 +20,7 @@ npm install -g harp
 npm install -g http-server
 npm install -g less
 npm install -g mocha
+npm install -g reqd
 npm install -g uglify-js
 
 echo "cd ~/projects" >> ~/.profile

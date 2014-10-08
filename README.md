@@ -53,6 +53,7 @@ Additionally, the following CLI tools have been installed globally and are ready
 - [http-server](https://github.com/nodeapps/http-server)
 - [Less](http://lesscss.org/)
 - [Mocha](http://visionmedia.github.io/mocha/)
+- [reqd](https://github.com/thenativeweb/reqd)
 - [UglifyJS2](http://lisperator.net/uglifyjs/)
 
 Where necessary, port forwardings for these tools have already been configured.
