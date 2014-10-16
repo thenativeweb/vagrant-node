@@ -66,10 +66,6 @@ If you add custom Docker containers, you may need to adjust the port forwarding 
 
 As we regularly use MongoDB and RabbitMQ, the ports `27017` and `28017` respectively `5672` and `15672` have already been setup for port forwarding, but both servers are not installed by default. We recommend using ready-made Docker images, such as [tutum/mongodb](https://github.com/tutumcloud/tutum-docker-mongodb) and [tutum/rabbitmq](https://github.com/tutumcloud/tutum-docker-rabbitmq).
 
-For debugging running Docker containers, [docker-enter](https://github.com/jpetazzo/nsenter) has been installed. To enter a running container run the following command.
-
-    $ docker-enter <containerid>
-
 ## License
 
 The MIT License (MIT)

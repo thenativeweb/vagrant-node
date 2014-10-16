@@ -35,9 +35,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vm.cpus = 2
   end
 
-  config.vm.provision "docker", version: "1.2" do |docker|
+  config.vm.provision "docker", version: "1.3" do |docker|
     docker.pull_images "ubuntu"
-    docker.run "jpetazzo/nsenter", daemonize: false, args: "--rm -v /usr/local/bin:/target"
   end
 
   config.vm.provision "shell", path: "provision.sh", privileged: false
