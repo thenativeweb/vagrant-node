@@ -21,6 +21,7 @@ npm install -g http-server
 npm install -g less
 npm install -g mocha
 npm install -g pm2
+npm install -g pm2-web
 npm install -g reqd
 npm install -g uglify-js
 
