@@ -48,7 +48,6 @@ Additionally, the following CLI tools have been installed globally and are ready
 
 - [Browserify](http://browserify.org/)
 - [ESLint](http://eslint.org/)
-- [forever](https://github.com/nodejitsu/forever)
 - [Grunt](http://gruntjs.com/)
 - [Harp](http://harpjs.com/)
 - [http-server](https://github.com/nodeapps/http-server)
