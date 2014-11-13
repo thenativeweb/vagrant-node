@@ -48,11 +48,15 @@ Additionally, the following CLI tools have been installed globally and are ready
 
 - [Browserify](http://browserify.org/)
 - [ESLint](http://eslint.org/)
+- [forever](https://github.com/nodejitsu/forever)
 - [Grunt](http://gruntjs.com/)
 - [Harp](http://harpjs.com/)
 - [http-server](https://github.com/nodeapps/http-server)
+- [knockat](https://github.com/thenativeweb/knockat)
 - [Less](http://lesscss.org/)
 - [Mocha](http://visionmedia.github.io/mocha/)
+- [pm2](https://github.com/Unitech/pm2)
+- [pm2-web](https://github.com/achingbrain/pm2-web)
 - [reqd](https://github.com/thenativeweb/reqd)
 - [UglifyJS2](http://lisperator.net/uglifyjs/)
 
