@@ -15,6 +15,7 @@ nvm alias default 0.10
 
 npm install -g browserify
 npm install -g eslint
+npm install -g forever
 npm install -g grunt-cli
 npm install -g harp
 npm install -g http-server
