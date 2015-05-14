@@ -3,7 +3,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.require_version ">= 1.6.5"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "chef/ubuntu-14.04"
+  config.vm.box = "boxcutter/ubuntu1404"
   config.vm.box_check_update = true
 
   # Ports for http, https, Express, http-server and Harp
