@@ -35,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vm.cpus = 2
   end
 
-  config.vm.provision "docker", version: "1.3" do |docker|
+  config.vm.provision "docker", version: "1.6.2" do |docker|
     docker.pull_images "ubuntu"
   end
 
