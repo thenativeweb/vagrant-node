@@ -55,7 +55,7 @@ Additionally, the following CLI tools have been installed globally and are ready
 - [http-server](https://github.com/nodeapps/http-server)
 - [knockat](https://github.com/thenativeweb/knockat)
 - [Less](http://lesscss.org/)
-- [Mocha](http://visionmedia.github.io/mocha/)
+- [Mocha](http://mochajs.org/)
 - [pm2](https://github.com/Unitech/pm2)
 - [pm2-web](https://github.com/achingbrain/pm2-web)
 - [reqd](https://github.com/thenativeweb/reqd)
