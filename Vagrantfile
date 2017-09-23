@@ -14,12 +14,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 9000, host: 9000, host_ip: "127.0.0.1"
 
   # MongoDB ports
-  config.vm.network "forwarded_port", guest: 27017, host: 27017
-  config.vm.network "forwarded_port", guest: 28017, host: 28017
+  config.vm.network "forwarded_port", guest: 27017, host: 27017, host_ip: "127.0.0.1" 
+  config.vm.network "forwarded_port", guest: 28017, host: 28017, host_ip: "127.0.0.1" 
 
   # RabbitMQ ports
-  config.vm.network "forwarded_port", guest: 5672, host: 5672
-  config.vm.network "forwarded_port", guest: 15672, host: 15672
+  config.vm.network "forwarded_port", guest: 5672, host: 5672, host_ip: "127.0.0.1" 
+  config.vm.network "forwarded_port", guest: 15672, host: 15672, host_ip: "127.0.0.1" 
 
   config.ssh.forward_agent = true
 
